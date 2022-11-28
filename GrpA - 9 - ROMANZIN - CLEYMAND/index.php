@@ -67,7 +67,7 @@
         </div>
       </div>
 
-      <?php require "parallax.php"; ?>
+      <?php require "components/parallax.php"; ?>
 
       <!-- Graphic Charter -->
       <div class="row container margin valign-wrapper">
@@ -93,7 +93,7 @@
         </div>        
       </div>
 
-      <?php require "parallax.php"; ?>
+      <?php require "components/parallax.php"; ?>
 
       <!-- IJSO 2019 -->
       <div class="row container margin valign-wrapper">
@@ -119,7 +119,7 @@
         </div>
       </div>
 
-      <?php require "parallax.php"; ?>
+      <?php require "components/parallax.php"; ?>
 
       <!-- Dev Team -->
       <div class="row container margin">
