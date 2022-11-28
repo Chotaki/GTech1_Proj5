@@ -37,19 +37,19 @@
     <div class="nav-wrapper">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="hide-on-med-and-down">
-        <li><a href="index.html"><i class="material-icons">home</i></a></li>
+        <li><a href="index.php"><i class="material-icons">home</i></a></li>
         <li><a onClick=refreshPage()>Japan Expo</a></li>
-        <li><a href="charterkg.html">Graphic Charter</a></li>
-        <li><a href="ijso.html">IJSO 2019</a></li>
+        <li><a href="charterkg.php">Graphic Charter</a></li>
+        <li><a href="ijso.php">IJSO 2019</a></li>
       </ul>
     </div>
   </nav>
     
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html"><i class="material-icons">home</i></a></li>
+    <li><a href="index.php"><i class="material-icons">home</i></a></li>
     <li><a onClick=refreshPage()>Japan Expo</a></li>
-    <li><a href="charterkg.html">Graphic Charter</a></li>
-    <li><a href="ijso.html">IJSO 2019</a></li>
+    <li><a href="charterkg.php">Graphic Charter</a></li>
+    <li><a href="ijso.php">IJSO 2019</a></li>
   </ul>
   
   <div class="death">

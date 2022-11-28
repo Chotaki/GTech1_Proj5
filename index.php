@@ -39,68 +39,19 @@
       <div class="nav-wrapper">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="hide-on-med-and-down">
-          <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
-          <li><a href="japanexpo.php">Japan Expo</a></li>
-          <li><a href="charterkg.php">Graphic Charter</a></li>
-          <li><a href="ijso.php">IJSO 2019</a></li>
-          <li><a href="#modal1">Sign In</a></li>
-          <li><a href="#modal2">Sign Up</a></li>
+          <div>
+            <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
+            <li><a href="japanexpo.php">Japan Expo</a></li>
+            <li><a href="charterkg.php">Graphic Charter</a></li>
+            <li><a href="ijso.php">IJSO 2019</a></li>
+          </div>
+          <div class="right">
+            <li><a href="#modal1">Sign In</a></li>
+            <li><a href="#modal2">Sign Up</a></li>
+          </div>
         </ul>
       </div>
     </nav>
-
-    <div id="modal1" class="modal">
-              <div class="modal-content red lighten-2">
-                <h4 class="black-text center-align white-text">Sign in</h4>
-                <div class="container">
-                  <form class="row">
-                    <div class="input-field col s12 m6 offset-m3">
-                      <i class="material-icons prefix white-text">contact_mail</i>
-                      <input id="email" type="email" class="validate">
-                      <label for="email" class="white-text">Username</label>
-                      <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12 m6 offset-m3">
-                        <i class="material-icons prefix white-text">contact_mail</i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email" class="white-text">Email</label>
-                        <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12 m6 offset-m3">
-                        <i class="material-icons prefix white-text">contact_mail</i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email" class="white-text">Passwod</label>
-                        <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-
-    <div id="modal2" class="modal">
-    <div class="modal-content red lighten-2">
-      <h4 class="black-text center-align white-text">Any questions ?</h4>
-      <div class="container">
-        <form class="row">
-          <div class="input-field col s12 m6 offset-m3">
-            <i class="material-icons prefix white-text">contact_mail</i>
-            <input id="email" type="email" class="validate">
-            <label for="email" class="white-text">Email</label>
-            <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix white-text">mode_edit</i>
-              <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
-              <label for="icon_prefix2" class="white-text">Your message here</label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
     
     <ul class="sidenav" id="mobile-demo">
       <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
