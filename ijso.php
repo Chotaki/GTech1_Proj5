@@ -27,7 +27,7 @@
 
     <!-- Browser Tab -->
     <link rel="icon" href="img/puzzle.png">
-    <title>Japan Expo</title>
+    <title>IJSO 2019</title>
   </head>
 
   <body>
@@ -37,32 +37,32 @@
     <div class="nav-wrapper">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="hide-on-med-and-down">
-        <li><a href="index.html"><i class="material-icons">home</i></a></li>
-        <li><a onClick=refreshPage()>Japan Expo</a></li>
-        <li><a href="charterkg.html">Graphic Charter</a></li>
-        <li><a href="ijso.html">IJSO 2019</a></li>
+        <li><a href="index.php"><i class="material-icons">home</i></a></li>
+        <li><a href="japanexpo.php">Japan Expo</a></li>
+        <li><a href="charterkg.php">Graphic Charter</a></li>
+        <li><a onClick=refreshPage()>IJSO 2019</a></li>
       </ul>
     </div>
   </nav>
     
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html"><i class="material-icons">home</i></a></li>
-    <li><a onClick=refreshPage()>Japan Expo</a></li>
-    <li><a href="charterkg.html">Graphic Charter</a></li>
-    <li><a href="ijso.html">IJSO 2019</a></li>
+    <li><a href="index.php"><i class="material-icons">home</i></a></li>
+    <li><a href="japanexpo.php">Japan Expo</a></li>
+    <li><a href="charterkg.php">Graphic Charter</a></li>
+    <li><a onClick=refreshPage()>IJSO 2019</a></li>
   </ul>
   
   <div class="death">
     <!-- Header -->
-    <header id="headerproj"><h1 class="center-align white-text margin animate__animated animate__fadeIn">Japan Expo</h1></header>
+    <header id="headerproj"><h1 class="center-align white-text margin animate__animated animate__fadeIn">IJSO 2019</h1></header>
 
     <!-- Content -->
     <div id="topcard" class="row container wow animate__animated animate__slideInLeft">
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Going to Paris</span>
-            <p>As an association evolving in the gaming and eSport industry in France and Luxembourg, the Japan Expo is a must to gain visibility. With the covid, the Japan Expo didn’t happen for two years so in 2022 we knew it was going to be a crazy event. We planned everything in two months and in july we were able to attend the event.</p>
+            <span class="card-title">A team</span>
+            <p>We were the first French team to ever participate in the competition which was extremely rewarding. Our team was composed of 6 students like every other and we were selected baseed on our english level and sciences grades.</p>
           </div>
         </div>
       </div>
@@ -72,8 +72,8 @@
       <div class="col s12 m6 l6 offset-m6 offset-l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Organizing tournaments</span>
-            <p>Anaëlle had the chance to be at the head of a team for two tournaments during the event. She had to organize the inscriptions as well as the competition itself. In the morning she was listing all the contestants while in the afternoon she was taking care of the players and the games happening with Alexis’ help while contesting as well.</p>
+            <span class="card-title">Exams</span>
+            <p>We had 3 exams during the week. The first one was an individual MCQ, the second one was individual theorical test and the last one was a pratical exam in groups of three, each exams being about physics, chemistry and biology</p>
           </div>
         </div>
       </div>
@@ -83,8 +83,8 @@
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Animating on stage</span>
-            <p>Anaëlle was lucky enough to comment on a few tournaments on the biggest stage of the event. The games were Demon Slayer and Naruto and she was alongside Yohan that co-animated, it was a fun and rewarding experience.</p>
+            <span class="card-title">An opportunity to visit a countrie</span>
+            <p>We stayed in Qatar for 10 days and having only 3 exam days allowed us to move a lot. We visited a bunch of museum and even were allowed a day at the beach, that part of the trip was absolutely awesome.</p>
           </div>
         </div>
       </div>
@@ -94,8 +94,8 @@
       <div class="col s12 m6 l6 offset-m6 offset-l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Animating a stand</span>
-            <p>This is the main occupation of the association so it wasn’t the first time that Anaëlle animated a stand. The only difference was the amount of people she saw and talked to. It was a bit more stressful because all the people passing by were potential thieves.</p>
+            <span class="card-title">A medal</span>
+            <p>All my efforts and work during several months were finally rewarded by winning a bronze medal, making me the first ever French student winning a medal at that competition and I made France be one of the few country receiving a medal on their first participation, which is usually pretty rare.</p>
           </div>
         </div>
       </div>
@@ -105,19 +105,19 @@
     <div class="row">
       <div class="col s12 m12 l6 offset-l3 carousel carousel-slider center margin">
         <div class="carousel-fixed-item center">
-          <a class="btn waves-effect white grey-text darken-text-2" href="https://www.japan-expo-paris.com/fr/" target="_blank" rel="nofollow">Japan Expo</a>
+          <a class="btn waves-effect white grey-text darken-text-2" href="http://www.ijsoweb.org/" target="_blank" rel="nofollow">IJSO</a>
         </div>
-        <div class="carousel-item white-text install-img">
-          <h2 class="carousel-text">Installation</h2>
+        <div class="carousel-item white-text frenchteam-img">
+          <h2 class="carousel-text">French Team</h2>
         </div>
-        <div class="carousel-item white-text stand-img">
-          <h2 class="carousel-text">Our Stand</h2>
+        <div class="carousel-item white-text visits-img">
+          <h2 class="carousel-text">Visits</h2>
         </div>
-        <div class="carousel-item white-text team-img">
-          <h2 class="carousel-text">The Team</h2>
+        <div class="carousel-item white-text exams-img">
+          <h2 class="carousel-text">Exams</h2>
         </div>
-        <div class="carousel-item white-text toornament-img">
-          <h2 class="carousel-text">Toornament</h2>
+        <div class="carousel-item white-text meetings-img">
+          <h2 class="carousel-text">International Meetings</h2>
         </div>
       </div>
     </div>  
