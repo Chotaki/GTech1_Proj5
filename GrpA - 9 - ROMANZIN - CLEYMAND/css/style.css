@@ -1,0 +1,207 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* General */
+
+.margin{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 700px) {
+    .margin{
+        margin-top: 15%;
+        margin-bottom: 7%;
+    }
+}
+
+.width img{
+    width: 100%;
+}
+
+#deathbump{
+    font-family: "prompt";
+    padding-top: 5%;    
+    font-size: 8vw!important;
+}
+
+@media only screen and (max-width: 700px) {
+    .valign-wrapper{
+        display: list-item;
+    }
+}
+
+/* Header */
+
+#header{
+    font-family: 'Prompt', sans-serif !important;
+}
+
+.margin-header{
+    padding-top: 5%;
+    margin-bottom: 4%;
+}
+
+.header-bg{
+    background-image: url(../img/bgheader.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header-bg h1{
+    text-shadow: 1px 0 10px #e57373;
+}
+
+#headerproj h1{
+    background-image: url(../img/bgheaderproj.png);
+    background-size: 100%;
+    background-position: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    font-family: "prompt";
+    font-size: 8vw!important;
+}
+
+h1{
+    padding-top: 5%;    
+}
+
+/* Navbar */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 9999; /*overkill mais ok*/
+}
+
+#mobile-demo{
+    padding-top:15%; 
+}
+
+/* Content */
+
+#topcard{
+    margin-top: 2%; 
+}
+
+.carousel-text{
+    text-shadow: 2px 2px 10px black;
+}
+
+/* Carousels */
+
+.install-img{
+    background-image: url(../img/install.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stand-img{
+    background-image: url(../img/stand.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team-img{
+    background-image: url(../img/team.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toornament-img{
+    background-image: url(../img/toornament.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pull-img{
+    background-image: url(../img/pull.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wall-img{
+    background-image: url(../img/wall.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rollup-img{
+    background-image: url(../img/rollup.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img{
+    background-image: url(../img/card.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.frenchteam-img{
+    background-image: url(../img/frenchteam.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.visits-img{
+    background-image: url(../img/visit.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.exams-img{
+    background-image: url(../img/exam.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.meetings-img{
+    background-image: url(../img/meetings.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Footer */
+
+.round{
+    border-radius: 100%;
+    width: 70%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+footer div{
+    margin-bottom:0px !important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer div img{
+    width: 75%;
+}
+
+footer div .not-img{
+    margin-top:1%;
+}
+
+h3{
+    font-size: x-large;
+    font-weight: bold;
+}
