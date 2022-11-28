@@ -67,9 +67,7 @@
         </div>
       </div>
 
-      <div class="parallax-container">
-        <div class="parallax width"><img src="img/paralax.png" alt="background"></div>
-      </div>
+      <?php require "parallax.php"; ?>
 
       <!-- Graphic Charter -->
       <div class="row container margin valign-wrapper">
@@ -95,9 +93,7 @@
         </div>        
       </div>
 
-      <div class="parallax-container">
-        <div class="parallax width"><img src="img/paralax.png" alt="background"></div>
-      </div>
+      <?php require "parallax.php"; ?>
 
       <!-- IJSO 2019 -->
       <div class="row container margin valign-wrapper">
@@ -123,9 +119,7 @@
         </div>
       </div>
 
-      <div class="parallax-container">
-        <div class="parallax width"><img src="img/paralax.png" alt="background"></div>
-      </div>
+      <?php require "parallax.php"; ?>
 
       <!-- Dev Team -->
       <div class="row container margin">
