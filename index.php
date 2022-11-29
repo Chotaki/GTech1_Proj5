@@ -40,6 +40,7 @@
 
     <div class="death">
       <div class="header-bg">
+        
         <!-- Header -->
         <h1 id="header" class="center-align margin-header white-text animate__animated animate__fadeIn wow">Projects</h1>
 
