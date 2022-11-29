@@ -15,7 +15,7 @@
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
                 <div class="modal-content red lighten-2">
-                    <h4 class="black-text center-align white-text">Any questions ?</h4>
+                    <h4 class="center-align white-text">Any questions ?</h4>
                     <div class="container">
                         <form class="row">
                             <div class="input-field col s12 m6 offset-m3">
