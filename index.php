@@ -168,6 +168,7 @@
 
       <!-- Footer -->
       <?php require "components/footer.php"; ?>
+
     </div>  
 
     <!--JavaScript at end of body for optimized loading-->
