@@ -15,5 +15,5 @@ if (isset($_POST["email"]) && isset($_POST["mail_content"])){
     }
 }
 
-header('Location: ../index.php');//ici on emmène l'utilisateur sur index.php
+//ici on emmène l'utilisateur sur index.php
 ?>
