@@ -52,7 +52,7 @@
     <li><a href="japanexpo.html">Japan Expo</a></li>
     <li><a href="charterkg.html">Graphic Charter</a></li>
     <li><a href="ijso.html">IJSO 2019</a></li>
-    <li><a href="#modal1">Sign Up</a></li>
+    <li><a href="#modal3">Sign Up</a></li>
     <li><a href="#modal2">Sign In</i></a></li>
 </ul>
 
