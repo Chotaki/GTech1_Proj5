@@ -14,30 +14,30 @@
             <a class="waves-effect waves-light btn-large modal-trigger pink lighten-1" href="#modal1">Contact us !<i class="material-icons right">mail_outline</i></a>
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
-                <div class="modal-content red lighten-2">
-                    <h4 class="center-align white-text">Any questions ?</h4>
-                    <div class="container">
-                        <form class="row">
+                <form method="post" action="queries/mail.php" class="row">
+                    <div class="modal-content red lighten-2">
+                        <h4 class="black-text center-align white-text">Any questions ?</h4>
+                        <div class="container">
                             <div class="input-field col s12 m6 offset-m3">
                                 <i class="material-icons prefix white-text">contact_mail</i>
-                                <input id="email" type="email" class="validate">
+                                <input type="email" name="email" class="validate">
                                 <label for="email" class="white-text">Email</label>
                                 <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix white-text">mode_edit</i>
-                                    <textarea id="icon_prefix2" class="materialize-textarea white-text"></textarea>
+                                    <input type="text" name="mail_content" id="icon_prefix2" class="materialize-textarea white-text"></input>
                                     <label for="icon_prefix2" class="white-text">Your message here</label>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
-                    <button class="btn waves-effect waves-light pink lighten-1" type="submit" name="action">Send<i class="material-icons right">send</i></button>
-                </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
+                        <button class="btn waves-effect waves-light pink lighten-1" type="submit" action="queries/mail.php">Send<i class="material-icons right">send</i></button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
