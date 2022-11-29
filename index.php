@@ -119,13 +119,7 @@
         </div>
       </div>
 
-<<<<<<< HEAD
       <?php require "components/parallax.php"; ?>
-=======
-      <div class="parallax-container">
-        <div class="parallax width"><img src="img/paralax.png" alt="background"></div>
-      </div>
->>>>>>> 02c80d17dcc13f737936aeae1f824d00ed10f4f5
 
       <!-- Dev Team -->
       <div class="row container margin">
@@ -189,9 +183,9 @@
           </div>
           <div class="col s12 m4 l4 not-img center-align">
             <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn-large modal-trigger pink lighten-1" href="#modal-footer">Contact us !<i class="material-icons right">mail_outline</i></a>
+            <a class="waves-effect waves-light btn-large modal-trigger pink lighten-1" href="#modal3">Contact us !<i class="material-icons right">mail_outline</i></a>
             <!-- Modal Structure -->
-            <div id="modal-footer" class="modal">
+            <div id="modal3" class="modal">
               <div class="modal-content red lighten-2">
                 <h4 class="black-text center-align white-text">Any questions ?</h4>
                 <div class="container">
