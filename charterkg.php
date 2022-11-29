@@ -25,9 +25,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Prompt:wght@800&display=swap" rel="stylesheet">
 
-    <!-- Browser Tab -->
+    <!-- Browser  tab -->
     <link rel="icon" href="img/puzzle.png">
-    <title>IJSO 2019</title>
+    <title>Graphic Charter</title>
   </head>
 
   <body>
@@ -37,32 +37,32 @@
     <div class="nav-wrapper">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="hide-on-med-and-down">
-        <li><a href="index.html"><i class="material-icons">home</i></a></li>
-        <li><a href="japanexpo.html">Japan Expo</a></li>
-        <li><a href="charterkg.html">Graphic Charter</a></li>
-        <li><a onClick=refreshPage()>IJSO 2019</a></li>
+        <li><a href="index.php"><i class="material-icons">home</i></a></li>
+        <li><a href="japanexpo.php">Japan Expo</a></li>
+        <li><a onClick=refreshPage()>Graphic Charter</a></li>
+        <li><a href="ijso.php">IJSO 2019</a></li>
       </ul>
     </div>
   </nav>
     
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html"><i class="material-icons">home</i></a></li>
-    <li><a href="japanexpo.html">Japan Expo</a></li>
-    <li><a href="charterkg.html">Graphic Charter</a></li>
-    <li><a onClick=refreshPage()>IJSO 2019</a></li>
+    <li><a href="index.php"><i class="material-icons">home</i></a></li>
+    <li><a href="japanexpo.php">Japan Expo</a></li>
+    <li><a onClick=refreshPage()>Graphic Charter</a></li>
+    <li><a href="ijso.php">IJSO 2019</a></li>
   </ul>
   
   <div class="death">
     <!-- Header -->
-    <header id="headerproj"><h1 class="center-align white-text margin animate__animated animate__fadeIn">IJSO 2019</h1></header>
+    <header id="headerproj"><h1 class="center-align margin white-text animate__animated animate__fadeIn">Graphic Charter</h1></header>
 
     <!-- Content -->
     <div id="topcard" class="row container wow animate__animated animate__slideInLeft">
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">A team</span>
-            <p>We were the first French team to ever participate in the competition which was extremely rewarding. Our team was composed of 6 students like every other and we were selected baseed on our english level and sciences grades.</p>
+            <span class="card-title">Upgrading the old logo</span>
+            <p>We asked one of Yohan friends to rework the logo in order to have it be more modern and become the base of the project.</p>
           </div>
         </div>
       </div>
@@ -72,8 +72,8 @@
       <div class="col s12 m6 l6 offset-m6 offset-l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Exams</span>
-            <p>We had 3 exams during the week. The first one was an individual MCQ, the second one was individual theorical test and the last one was a pratical exam in groups of three, each exams being about physics, chemistry and biology</p>
+            <span class="card-title">Creating a visual identity and a color palette</span>
+            <p>It took us several days after receiving the logo to decide on a fixed color palette that now includes red, white, blue and pink. Then to create a visiual identity using small grafitti like drawings.</p>
           </div>
         </div>
       </div>
@@ -83,19 +83,8 @@
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">An opportunity to visit a countrie</span>
-            <p>We stayed in Qatar for 10 days and having only 3 exam days allowed us to move a lot. We visited a bunch of museum and even were allowed a day at the beach, that part of the trip was absolutely awesome.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row container wow animate__animated animate__slideInRight">
-      <div class="col s12 m6 l6 offset-m6 offset-l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">A medal</span>
-            <p>All my efforts and work during several months were finally rewarded by winning a bronze medal, making me the first ever French student winning a medal at that competition and I made France be one of the few country receiving a medal on their first participation, which is usually pretty rare.</p>
+            <span class="card-title">Creating merchandising</span>
+            <p>Now that we have this visual identity it's become so much easier to create merchandising while we juste have to take what already exist and modify it a little.</p>
           </div>
         </div>
       </div>
@@ -105,19 +94,20 @@
     <div class="row">
       <div class="col s12 m12 l6 offset-l3 carousel carousel-slider center margin">
         <div class="carousel-fixed-item center">
-          <a class="btn waves-effect white grey-text darken-text-2" href="http://www.ijsoweb.org/" target="_blank" rel="nofollow">IJSO</a>
+          <a class="btn waves-effect white grey-text darken-text-2" href="https://kaiogaming.fr/" target="_blank" rel="nofollow">Kaio Gaming</a>
         </div>
-        <div class="carousel-item white-text frenchteam-img">
-          <h2 class="carousel-text">French Team</h2>
+        <div class="carousel-item white-text pull-img">
+          <h2 class="carousel-text">Sweaters</h2>
         </div>
-        <div class="carousel-item white-text visits-img">
-          <h2 class="carousel-text">Visits</h2>
+        <div class="carousel-item white-text rollup-img">
+          <h2 class="carousel-text">Roll-Ups</h2>
         </div>
-        <div class="carousel-item white-text exams-img">
-          <h2 class="carousel-text">Exams</h2>
+        <div class="carousel-item white-text card-img">
+          <h2 class="carousel-text">Visit Cards</h2>
         </div>
-        <div class="carousel-item white-text meetings-img">
-          <h2 class="carousel-text">International Meetings</h2>
+        <div class="carousel-item white-text wall-img">
+          <h2 class="carousel-text">Wall</h2>
+
         </div>
       </div>
     </div>  
@@ -168,7 +158,7 @@
       </div>
       <div class="row footer-copyright">
         <div class="col s12 m6 l6 center-align">
-         <p  class="grey-text text-lighten-4">&copy; Gaming Campus - 2022</p>
+        <p  class="grey-text text-lighten-4">&copy; Gaming Campus - 2022</p>
         </div>
         <div class="col s12 m6 l6 center-align">
           <a  class="grey-text text-lighten-4" href="https://gamingcampus.fr/?utm_term=gaming%20campus&utm_campaign=Gaming+Campus+-+Marque&utm_source=adwords&utm_medium=ppc&hsa_acc=5656227748&hsa_cam=11532002367&hsa_grp=118137353731&hsa_ad=483696679366&hsa_src=g&hsa_tgt=kwd-423735683440&hsa_kw=gaming%20campus&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw48OaBhDWARIsAMd966DPDHNvnESKud8um5xdaCbx1x1k3eEKmMFDSOfBztSD9FPHT5Do1W4aArgCEALw_wcB" target="_blank" rel="nofollow">Gaming Campus Website</a>
