@@ -64,20 +64,20 @@
         <form class="row" method="post" action="signup.php">
             <div class="input-field col s12 m6 offset-m3">
                 <i class="material-icons prefix white-text">contact_mail</i>
-                <input id="username" type="username" class="validate">
-                <label for="email" class="white-text">Username</label>
+                <input id="username" type="text" class="validate"/>
+                <label for="username" class="white-text">Username</label>
             </div>
             <div class="input-field col s12 m6 offset-m3">
                 <i class="material-icons prefix white-text">contact_mail</i>
-                <input id="email" type="email" class="validate">
+                <input id="email" type="email" class="validate"/>
                 <label for="email" class="white-text">Email</label>
                 <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
                     <i class="material-icons prefix white-text">contact_mail</i>
-                    <input id="password" type="password" class="validate">
-                    <label for="email" class="white-text">Password</label>
+                    <input id="password" type="password" class="validate"/>
+                    <label for="password" class="white-text">Password</label>
                 </div>
             </div>
         </form>
