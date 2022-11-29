@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST["email"]) && isset($_POST["mail_content"])){
 
-    $email = "bcleymand@gaming.tech";
+    $email = "aromanzin@gaming.tech";
     $object = "Projects Website: ".$_POST["email"];
     $content = "<b>".$_POST["mail_content"]."<b>";
     $headers = 'MIME-Version: 1.0;Content-type: text/html; charset=utf8';
