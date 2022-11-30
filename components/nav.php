@@ -82,6 +82,13 @@
             </div>
         </div>
         <div class="modal-footer">
+        
+            <?php 
+            if (isset($_SESSION["error"])){
+                echo "<div class='left red white-text'>".$_SESSION["error"]."</div>";
+                unset($_SESSION["error"]);
+            };
+            ?>
             <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
             <button class="btn waves-effect waves-light pink lighten-1" type="submit">Sign Up<i class="material-icons right">send</i></button>
         </div>

@@ -16,6 +16,6 @@ if (empty($_POST["username"])){
     $pre = $pdo->prepare($sql);
     $pre->execute($dataBinded);
 };
-header('Location: ../index.php');
+header('Location: ../index.php#modal3');
 exit();
 ?>

@@ -50,13 +50,6 @@
           echo "Vous n'êtes pas connecté";
         }
         ?>
-        
-        <?php 
-        if (isset($_SESSION["error"])){
-            echo "<div>".$_SESSION["error"]."</div>";
-            unset($_SESSION["error"]);
-        };
-        ?>
 
         <!-- Japan Expo -->
         <div class="row container margin valign-wrapper">
