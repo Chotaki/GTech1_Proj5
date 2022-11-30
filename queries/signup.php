@@ -11,7 +11,7 @@ if (empty($_POST["username"])){
     $dataBinded=array(
         ':username'=> $_POST['username'],
         ':email'   => $_POST['email'],
-        ':password'=> $_POST['password'],
+        ':password'=> SHA1("NFSDJK5QLBFNDQ?KLQL122é('-(è-è_-_(@àç_è1F".$_POST['password']),
     );
     $pre = $pdo->prepare($sql);
     $pre->execute($dataBinded);
@@ -20,7 +20,7 @@ if (empty($_POST["username"])){
     $sql = "SELECT * FROM user WHERE username=':username' AND password=':password'";     
     $dataBinded=array(
         ':username'=> $_POST['username'],
-        ':password'=> $_POST['password'],
+        ':password'=> SHA1("NFSDJK5QLBFNDQ?KLQL122é('-(è-è_-_(@àç_è1F".$_POST['password']),
     );
     $pre = $pdo->prepare($sql); 
     $pre->execute();
