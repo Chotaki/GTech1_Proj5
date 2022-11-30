@@ -124,6 +124,13 @@
             </div>
     </div>
     <div class="modal-footer">
+        
+        <?php 
+        if (isset($_SESSION["errorlogin"])){
+            echo "<div class='left red white-text'>".$_SESSION["errorlogin"]."</div>";
+            unset($_SESSION["errorlogin"]);
+        };
+        ?>
     <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
     <button class="btn waves-effect waves-light pink lighten-1" type="submit" name="action">Login<i class="material-icons right">send</i></button>
     </form>
