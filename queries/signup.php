@@ -28,6 +28,6 @@ if (empty($_POST["username"])){
     $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
     require_once "adminCheck.php";
 };
-header('Location: ../index.php#modal3');
+header('Location: ../index.php');
 exit();
 ?>

@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix white-text">mode_edit</i>
-                                    <input type="text" name="mail_content" id="icon_prefix2" class="materialize-textarea white-text"></input>
+                                    <input type="text" name="mail_content" id="icon_prefix2" class="white-text"></input>
                                     <label for="icon_prefix2" class="white-text">Your message here</label>
                                 </div>
                             </div>
