@@ -1,5 +1,6 @@
+#login.php
 <?php 
-require_once "php/config/config.php"; 
+require_once "../config/config.php"; 
 $sql = "SELECT * FROM user WHERE username='".$_POST['username']."' AND password='".$_POST['password']."'"; 
 $pre = $pdo->prepare($sql); 
 $pre->execute();
@@ -9,9 +10,7 @@ if(empty($user)){ //vérifie si le resultat est vide !
      echo "Utilisateur ou mot de passe incorrect !";
 }else{
      $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-     require_once "adminCheck.php"
 }
 
-header('Location:index.php');//on le redirige sur la page d'accueil du site !
-exit();
+header('Location:../index.php');//on le redirige sur la page d'accueil du site !
 ?>

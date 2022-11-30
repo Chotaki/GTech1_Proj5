@@ -42,6 +42,9 @@
             <div class="right">
                 <li><a class="modal-trigger" href="#modal3">Sign Up</a></li>
                 <li><a class="modal-trigger" href="#modal2">Login</a></li>
+                <form action="queries/logout.php">
+                    <button class="btn waves-effect waves-light pink lighten-1" type="submit">LogOut</button>
+                </form>
             </div>
         </ul>
     </div>
@@ -93,7 +96,7 @@
         <div class="modal-content">
             <h4 class="center-align white-text">Login</h4>
         </div>
-        <form class="row" method="post" action="../queries/login.php">
+        <form class="row" method="post" action="queries/login.php">
             <div class="input-field col s12 m6 offset-m3">
                 <i class="material-icons prefix white-text">person</i>
                 <input id="username" type="text" name="username" class="validate"/>
