@@ -41,7 +41,7 @@
             </div>
             <div class="right">
                 <li><a class="modal-trigger" href="#modal3">Sign Up</a></li>
-                <li><a class="modal-trigger" href="#modal2">Sign In</a></li>
+                <li><a class="modal-trigger" href="#modal2">Login</a></li>
             </div>
         </ul>
     </div>
@@ -53,7 +53,7 @@
     <li><a href="charterkg.html">Graphic Charter</a></li>
     <li><a href="ijso.html">IJSO 2019</a></li>
     <li><a href="#modal3">Sign Up</a></li>
-    <li><a href="#modal2">Sign In</i></a></li>
+    <li><a href="#modal2">Login</i></a></li>
 </ul>
 
 <div id="modal3" class="modal red lighten-2">
@@ -61,41 +61,57 @@
         <div class="modal-content">
         <h4 class="center-align white-text">Sign Up</h4>
         </div>
-        <form class="row" method="post" action="signup.php">
+        <form class="row" method="post" action="queries/signup.php">
             <div class="input-field col s12 m6 offset-m3">
-                <i class="material-icons prefix white-text">contact_mail</i>
-                <input id="username" type="text" class="validate"/>
+                <i class="material-icons prefix white-text">person</i>
+                <input id="username" type="text" name="username" class="validate"/>
                 <label for="username" class="white-text">Username</label>
             </div>
             <div class="input-field col s12 m6 offset-m3">
-                <i class="material-icons prefix white-text">contact_mail</i>
-                <input id="email" type="email" class="validate"/>
+                <i class="material-icons prefix white-text">mail</i>
+                <input id="email" type="email" name="email" class="validate"/>
                 <label for="email" class="white-text">Email</label>
                 <span class="helper-text" data-error="Invalid Adress" data-success=""></span>
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 offset-m3">
-                    <i class="material-icons prefix white-text">contact_mail</i>
-                    <input id="password" type="password" class="validate"/>
+                    <i class="material-icons prefix white-text">key</i>
+                    <input id="password" type="password" name="password" class="validate"/>
                     <label for="password" class="white-text">Password</label>
                 </div>
             </div>
-        </form>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
-        <button class="btn waves-effect waves-light pink lighten-1" type="submit" name="action">Send<i class="material-icons right">send</i></button>
-    </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
+            <button class="btn waves-effect waves-light pink lighten-1" type="submit">Sign Up<i class="material-icons right">send</i></button>
+        </div>
+    </form>
   </div>
 
-<div id="modal2" class="modal">
-<div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-</div>
-<div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-</div>
+<div id="modal2" class="modal red lighten-2">
+    <div class="container">
+        <div class="modal-content">
+            <h4 class="center-align white-text">Login</h4>
+        </div>
+        <form class="row" method="post" action="../queries/login.php">
+            <div class="input-field col s12 m6 offset-m3">
+                <i class="material-icons prefix white-text">person</i>
+                <input id="username" type="text" name="username" class="validate"/>
+                <label for="username" class="white-text">Username</label>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6 offset-m3">
+                    <i class="material-icons prefix white-text">key</i>
+                    <input id="password" type="password" name="password" class="validate"/>
+                    <label for="password" class="white-text">Password</label>
+                </div>
+            </div>
+    </div>
+    <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves btn-flat">Cancel</a>
+    <button class="btn waves-effect waves-light pink lighten-1" type="submit" name="action">Login<i class="material-icons right">send</i></button>
+    </form>
+    </div>
 </div>
 
 </body>

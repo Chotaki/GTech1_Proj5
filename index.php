@@ -40,8 +40,16 @@
 
     <div class="death">
       <div class="header-bg">
+        
         <!-- Header -->
         <h1 id="header" class="center-align margin-header white-text animate__animated animate__fadeIn wow">Projects</h1>
+
+        <?php if(isset($_SESSION['user'])){
+          echo "Bonjour ".$_SESSION['user']['username'];
+        }else{
+          echo "Vous n'êtes pas connecté";
+        }
+        ?>
 
         <!-- Japan Expo -->
         <div class="row container margin valign-wrapper">
