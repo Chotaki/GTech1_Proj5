@@ -9,5 +9,6 @@ if(empty($user)){ //vérifie si le resultat est vide !
      echo "Utilisateur ou mot de passe incorrect !";
 }else{
      $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
+     require_once "adminCheck.php"
 }
 ?>
