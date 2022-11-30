@@ -10,7 +10,7 @@ if (empty($_POST["username"])){
     $pre->execute();
     $user = $pre->fetch(PDO::FETCH_ASSOC);
     $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-    require_once "adminCheck.php"
+    require_once "adminCheck.php";
 };
 
 header('Location:index.php');//on le redirige sur la page d'accueil du site !
