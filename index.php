@@ -37,7 +37,7 @@
 
     <!-- NavBar -->
     <?php require "components/nav.php"; ?>
-
+    
     <div class="death">
       <div class="header-bg">
         
