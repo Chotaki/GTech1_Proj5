@@ -44,12 +44,11 @@
         <!-- Header -->
         <h1 id="header" class="center-align margin-header white-text animate__animated animate__fadeIn wow">Projects</h1>
 
-        <?php if(isset($_SESSION['user'])){
-          echo "Bonjour ".$_SESSION['user']['username'];
-        }else{
-          echo "Vous n'êtes pas connecté";
-        }
-        ?>
+        <?php if(isset($_SESSION['user'])){ ?>
+          <div class="white-text center-align"> Hello <?php echo $_SESSION['user']['username'] ?> ! </div>
+        <?php }else{ ?>
+          <div class="white-text center-align"> You are not connected </div>
+        <?php } ?>
 
         <!-- Japan Expo -->
         <div class="row container margin valign-wrapper">

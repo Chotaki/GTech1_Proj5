@@ -35,16 +35,19 @@
         <ul class="hide-on-med-and-down">
             <div>
                 <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
-                <li><a href="japanexpo.html">Japan Expo</a></li>
-                <li><a href="charterkg.html">Graphic Charter</a></li>
-                <li><a href="ijso.html">IJSO 2019</a></li>
+                <li><a href="japanexpo.php">Japan Expo</a></li>
+                <li><a href="charterkg.php">Graphic Charter</a></li>
+                <li><a href="ijso.php">IJSO 2019</a></li>
             </div>
             <div class="right">
-                <li><a class="modal-trigger" href="#modal3">Sign Up</a></li>
-                <li><a class="modal-trigger" href="#modal2">Login</a></li>
-                <form action="queries/logout.php">
-                    <button class="btn waves-effect waves-light pink lighten-1" type="submit">LogOut</button>
-                </form>
+                <?php if (isset($_SESSION['user'])){ ?>
+                    <form action="queries/logout.php">
+                        <button class="btn waves-effect waves-light pink lighten-1" type="submit">LogOut</button>
+                    </form>
+                <?php }else{?>
+                    <li><a class="modal-trigger" href="#modal3">Sign Up</a></li>
+                    <li><a class="modal-trigger" href="#modal2">Login</a></li>
+                <?php } ?>
             </div>
         </ul>
     </div>
@@ -52,11 +55,14 @@
 
 <ul class="sidenav" id="mobile-demo">
     <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
-    <li><a href="japanexpo.html">Japan Expo</a></li>
-    <li><a href="charterkg.html">Graphic Charter</a></li>
-    <li><a href="ijso.html">IJSO 2019</a></li>
+    <li><a href="japanexpo.php">Japan Expo</a></li>
+    <li><a href="charterkg.php">Graphic Charter</a></li>
+    <li><a href="ijso.php">IJSO 2019</a></li>
     <li><a href="#modal3">Sign Up</a></li>
     <li><a href="#modal2">Login</i></a></li>
+    <form action="queries/logout.php">
+        <button class="btn waves-effect waves-light pink lighten-1" type="submit">LogOut</button>
+    </form>
 </ul>
 
 <div id="modal3" class="modal red lighten-2">
