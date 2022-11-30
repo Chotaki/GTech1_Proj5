@@ -14,8 +14,13 @@ foreach($data as $userData){?></br><?php
     //killthatguy aka thanossnap.php
 };
 ?><h2>check out those sick articles</h2>
-<!-- the shit you've done so far -->
+<!-- the shit you've done so far
+
+uh make it call the database to get all the data on each page, and let it be editable
+-->
 <h2>make the goddamn article yourself if you're so good at it</h2>
-<!-- exactly what it sounds like -->
+<!-- exactly what it sounds like 
+make-a-bear but shittier and without any fun whatsoever
+-->
 <?php
 ?>
