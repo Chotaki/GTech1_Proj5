@@ -15,6 +15,18 @@ if (empty($_POST["username"])){
     );
     $pre = $pdo->prepare($sql);
     $pre->execute($dataBinded);
+    
+    // login 
+    $sql = "SELECT * FROM user WHERE username=':username' AND password=':password'";     
+    $dataBinded=array(
+        ':username'=> $_POST['username'],
+        ':password'=> $_POST['password'],
+    );
+    $pre = $pdo->prepare($sql); 
+    $pre->execute();
+    $user = $pre->fetch(PDO::FETCH_ASSOC);
+    $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
+    require_once "adminCheck.php";
 };
 header('Location: ../index.php#modal3');
 exit();

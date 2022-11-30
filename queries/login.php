@@ -1,11 +1,15 @@
 <?php 
 require_once "../config/config.php"; 
 if (empty($_POST["username"])){
-    $_SESSION["error"]="Invalid Username";
+    $_SESSION["errorlogin"]="Invalid Username";
 }elseif (empty($_POST["password"])){
-    $_SESSION["error"]="Invalid Password";
+    $_SESSION["errorlogin"]="Invalid Password";
 }else{
-    $sql = "SELECT * FROM user WHERE username='".$_POST['username']."' AND password='".$_POST['password']."'"; 
+    $sql = "SELECT * FROM user WHERE username=':username' AND password=':password'";     
+    $dataBinded=array(
+        ':username'=> $_POST['username'],
+        ':password'=> $_POST['password'],
+    );
     $pre = $pdo->prepare($sql); 
     $pre->execute();
     $user = $pre->fetch(PDO::FETCH_ASSOC);
