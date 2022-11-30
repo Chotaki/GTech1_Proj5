@@ -1,3 +1,4 @@
+<?php require_once "config/config.php"?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +49,10 @@
             </div>
         </ul>
     </div>
+    <?php
+    if (isset($_SESSION['user']) && ($_SESSION['user']["admin"]==1)){ ?>
+        <a url='panelAdmin.php'>Panel Admin</a>
+    <?php } ?>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
