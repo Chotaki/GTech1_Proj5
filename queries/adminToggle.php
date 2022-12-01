@@ -25,5 +25,5 @@ if ($data['admin'] == 0){
     $pre = $pdo->prepare($sql);
     $pre->execute($dataBinded);
 };
-header('Location: ../admin/panelAdmin.php');
+header('Location: ../panelAdmin.php');
 ?>
