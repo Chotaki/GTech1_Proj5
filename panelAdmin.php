@@ -29,6 +29,25 @@ foreach($data as $userData){
 };
 ?>
 
+<h2>change the main page</h2>
+<h3>text and stuff</h3>
+<?php
+  $sql = "SELECT * FROM home";
+  $pre = $pdo->prepare($sql);
+  $pre->execute();
+  $data = $pre->fetch(PDO::FETCH_ASSOC);
+?>
+<form method="post" action="queries/homeEdit.php">
+    <input name="h1" value=<?php echo $data['h1']?>>h1</input><br/>
+    <input name="h2_1" value=<?php echo $data['h2_1']?>>first article card</input>
+    <textarea name="p1" ><?php echo $data['p1']?></textarea><br/>
+    <input name="h2_2" value=<?php echo $data['h2_2']?>>second article card</input>
+    <textarea name="p2" ><?php echo $data['p2']?></textarea><br/>
+    <input name="h2_3" value=<?php echo $data['h2_3']?>>third article card</input>
+    <textarea name="p3" ><?php echo $data['p3']?></textarea><br/>
+    <input type="submit" value="ok this is cooler now">
+</form>
+
 <?php 
 
 $sql = "SELECT * FROM projects"; //votre requêtes SQL (vous savez faire maintenant héhé !)
