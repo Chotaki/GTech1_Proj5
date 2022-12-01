@@ -49,6 +49,11 @@ foreach($data as $userData){
     <input type="submit" value="ok good">
 </form>
 
+<form method="post" action="queries/upload_files.php">
+    
+</form>
+
+
 <h2>Modify your projects</h2>
 <?php foreach($data as $project){ ?>
     <form action="update_project.php" method="post">
