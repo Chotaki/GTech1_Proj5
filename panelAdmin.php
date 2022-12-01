@@ -36,22 +36,30 @@ foreach($data as $userData){
   $sql = "SELECT * FROM home";
   $pre = $pdo->prepare($sql);
   $pre->execute();
-  $data = $pre->fetch(PDO::FETCH_ASSOC);
+  $homedata = $pre->fetch(PDO::FETCH_ASSOC);
 ?>
 <form method="post" action="queries/homeEdit.php">
-    <textarea name="h1" ><?php echo $data['h1']?></textarea><br/>
-    <textarea name="h2_1" ><?php echo $data['h2_1']?></textarea><br/>
-    <textarea name="p1" ><?php echo $data['p1']?></textarea><br/>
-    <textarea name="h2_2" ><?php echo $data['h2_2']?></textarea><br/>
-    <textarea name="p2" ><?php echo $data['p2']?></textarea><br/>
-    <textarea name="h2_3" ><?php echo $data['h2_3']?></textarea><br/>
-    <textarea name="p3" ><?php echo $data['p3']?></textarea><br/>
+    <textarea name="h1" ><?php echo $homedata['h1']?></textarea><br/>
+    <textarea name="h2_1" ><?php echo $homedata['h2_1']?></textarea><br/>
+    <textarea name="p1" ><?php echo $homedata['p1']?></textarea><br/>
+    <textarea name="h2_2" ><?php echo $homedata['h2_2']?></textarea><br/>
+    <textarea name="p2" ><?php echo $homedata['p2']?></textarea><br/>
+    <textarea name="h2_3" ><?php echo $homedata['h2_3']?></textarea><br/>
+    <textarea name="p3" ><?php echo $homedata['p3']?></textarea><br/>
     <input type="submit" value="ok good">
 </form>
 
-<form method="post" action="queries/upload_files.php">
-    
+<h3>images</h3>
+<form method="post" action="queries/homeUpload.php" enctype="multipart/form-data">
+    <img width=500px src=<?php echo $homedata["img_1"] ?> alt="première image sur la page d'acceuil">
+    <input type='file' name='homeimg1'><br/>
+    <img width=500px src=<?php echo $homedata["img_2"] ?> alt="deuxième image sur la page d'acceuil">
+    <input type='file' name='homeimg2'><br/>
+    <img width=500px src=<?php echo $homedata["img_3"] ?> alt="troisième image sur la page d'acceuil">
+    <input type='file' name='homeimg3'><br/>
+    <input type="submit" value="upload pictures"/>
 </form>
+
 
 
 <h2>Modify your projects</h2>
@@ -102,6 +110,3 @@ foreach($data as $userData){
     </form>
 
 <?php } ?>
-
-<?php
-?>

@@ -19,9 +19,9 @@ $sql="UPDATE home
     h2_1=:h2_1,
     p1=:p1,
     h2_2=:h2_2,
-    `p2`=:p2,
-    `h2_3`=:h2_3,
-    `p3`=:p3 
+    p2=:p2,
+    h2_3=:h2_3,
+    p3=:p3 
     WHERE 1";
 $pre = $pdo->prepare($sql);
 $pre->execute($dataBinded);
