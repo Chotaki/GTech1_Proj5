@@ -57,13 +57,54 @@ $data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une vari
 
 ?>
 
-<h2>Projects</h2>
-<h3>change the main title</h3>
-<input type="text" name="h1" value="<?php echo $data['h1'] ?>">
-<input type="submit" value="Modify the title">
-<h2>make the goddamn article yourself if you're so good at it</h2>
+<h2>Modify your projects</h2>
+<?php foreach($data as $project){ ?>
+    <form action="update_project.php" method="post">
+        <h3>Main title</h3>
+        <input type='hidden' name='projectId' value="<?php echo $project['id'] ?>" />
+        <input type="text" name="h1" value="<?php echo $project['h1'] ?>"/>
 
-<h2>check out those sick articles</h2>
+        <h3>First card</h3>
+        <input type="text" name="span1" value="<?php echo $project['span1'] ?>"/> <br>
+        <textarea type="text" name="p1"><?php echo $project['p1'] ?></textarea>
+
+        <h3>Second Card</h3>
+        <input type="text" name="span2" value="<?php echo $project['span2'] ?>"/><br>
+        <textarea type="text" name="p2"><?php echo $project['p2'] ?></textarea>
+
+        <h3>Third Card</h3>
+        <input type="text" name="span3" value="<?php echo $project['span3'] ?>"/><br>
+        <textarea type="text" name="p3"><?php echo $project['p3'] ?></textarea>
+        
+        <h3>Fourth Card</h3>
+        <input type="text" name="span4" value="<?php echo $project['span4'] ?>"/><br>
+        <textarea type="text" name="p4"><?php echo $project['p4'] ?></textarea>
+
+        <h3>Carousel</h3>
+
+        <h4>Images Title</h4>
+        <input type="text" name="h2_1" value="<?php echo $project['h2_1'] ?>"/><br>
+        <input type="text" name="h2_2" value="<?php echo $project['h2_2'] ?>"/><br>
+        <input type="text" name="h2_3" value="<?php echo $project['h2_3'] ?>"/><br>
+        <input type="text" name="h2_4" value="<?php echo $project['h2_4'] ?>"/>
+
+        <h4>Button</h4>
+        <input type="text" name="a_title" value="<?php echo $project['a_title'] ?>"/><br>
+        <input type="text" name="a_link" value="<?php echo $project['a_link'] ?>"/><br>
+
+        <input type="submit" value="Modify all the texts and link"/>
+    </form>
+
+    <form method="post" action="upload_file.php" enctype="multipart/form-data">
+        <h4>Images</h4>
+        <input type="file" name="img1"/><br>
+        <input type="file" name="img2"/><br>
+        <input type="file" name="img3"/><br>
+        <input type="file" name="img4"/><br>
+        <input type="submit" value="Modify the images"/>
+    </form>
+
+<?php } ?>
 
 <?php
 ?>
