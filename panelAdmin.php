@@ -29,7 +29,17 @@ foreach($data as $userData){
     //killthatguy aka thanossnap.php
 };
 ?>
-<h2>change the main title</h2>
+<h2>change the main page</h2>
+<?php
+$sql= "SELECT * from home";
+$pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
+$pre->execute();//on l'execute
+$home = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $home)
+?>
+<form action="queries/homeEdit.php">
+    <input name="h1" value=<?php $home["h1"]?>></input>
+</form>
+
 <h2>make the goddamn article yourself if you're so good at it</h2>
 <!-- exactly what it sounds like 
 make-a-bear but shittier and without any fun whatsoever
