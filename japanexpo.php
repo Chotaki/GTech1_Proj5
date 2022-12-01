@@ -107,7 +107,7 @@
         <div class="carousel-fixed-item center">
           <a class="btn waves-effect white grey-text darken-text-2" href="https://www.japan-expo-paris.com/fr/" target="_blank" rel="nofollow">Japan Expo</a>
         </div>
-        <div class="carousel-item white-text install-img">
+        <div class="carousel-item white-text" style="background-image:url('<?php echo ?>')">
           <h2 class="carousel-text">Installation</h2>
         </div>
         <div class="carousel-item white-text stand-img">
