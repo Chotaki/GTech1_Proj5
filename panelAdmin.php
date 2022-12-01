@@ -49,6 +49,9 @@ foreach($data as $userData){
     <input type="submit" value="ok good">
 </form>
 
+<form method="post" action="queries/upload_files.php">
+    
+</form>
 
 
 <h2>Projects</h2>
