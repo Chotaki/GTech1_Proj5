@@ -6,14 +6,24 @@ $sql= "SELECT * from user";
 $pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
 $pre->execute();//on l'execute
 $data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
-?><h2>look at all these idiots</h2><?php
-foreach($data as $userData){?></br><?php
+
+?><h2>look at all these idiots</h2>
+<?php
+foreach($data as $userData){
+?>
+</br>
+<?php
     echo "user id: ".$userData['id']."| user name : ".$userData['username']."| is an admin ? ";
     echo $userData['admin'] == 1?'yes':'no';
-    //admintoggle bc why tf not
+    ?>
+    <form method="post" action="queries/adminToggle.php">
+        <button type='submit' name='userId' value=<?php $userData['id'] ?>>Toggle admin</button>
+    </form>
+    <?php
     //killthatguy aka thanossnap.php
 };
-?><h2>check out those sick articles</h2>
+?>
+<h2>check out those sick articles</h2>
 <!-- the shit you've done so far
 
 uh make it call the database to get all the data on each page, and let it be editable
