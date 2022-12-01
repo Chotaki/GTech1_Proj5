@@ -1,6 +1,6 @@
 <?php
 require_once "../config/config.php";
 
-$destination = "upload/".$_FILES['image']['name']; //dossier "upload"
-move_uploaded_file($_FILES['image']['tmp_name'],$destination);
+$destination = "upload/".$_FILES['img']['name']; //dossier "upload"
+move_uploaded_file($_FILES['img']['tmp_name'],$destination);
 ?>

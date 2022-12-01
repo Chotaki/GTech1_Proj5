@@ -53,6 +53,12 @@ foreach($data as $userData){
     
 </form>
 
+<?php
+  $sql = "SELECT * FROM projects";
+  $pre = $pdo->prepare($sql);
+  $pre->execute();
+  $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+?>
 
 <h2>Modify your projects</h2>
 <?php foreach($data as $project){ ?>
@@ -92,7 +98,7 @@ foreach($data as $userData){
         <input type="submit" value="Modify all the texts and link"/>
     </form>
 
-    <form method="post" action="upload_file.php" enctype="multipart/form-data">
+    <form method="post" action="upload_files.php" enctype="multipart/form-data">
         <h4>Images</h4>
         <input type="file" name="img1"/><br>
         <input type="file" name="img2"/><br>
