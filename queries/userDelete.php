@@ -16,7 +16,6 @@ $dataBinded=array(
 );
 $pre = $pdo->prepare($sql);
 $pre->execute($dataBinded);
-echo("finitruc1");
 
-header('Location:../panelAdmin.php');
+header('Location:../admin/panelAdmin.php');
 ?>

@@ -33,6 +33,13 @@
     <title>Projects</title>
   </head>
 
+  <?php
+  $sql = "SELECT * FROM home";
+  $pre = $pdo->prepare($sql);
+  $pre->execute();
+  $data = $pre->fetch(PDO::FETCH_ASSOC);
+  ?>
+
   <body>
 
     <!-- NavBar -->
@@ -42,7 +49,7 @@
       <div class="header-bg">
         
         <!-- Header -->
-        <h1 id="header" class="center-align margin-header white-text animate__animated animate__fadeIn wow">Projects</h1>
+        <h1 id="header" class="center-align margin-header white-text animate__animated animate__fadeIn wow"><?php echo $data["h1"] ?></h1>
 
         <?php if(isset($_SESSION['user'])){ ?>
           <div class="white-text center-align"> Hello <?php echo $_SESSION['user']['username'] ?> ! </div>
@@ -55,10 +62,10 @@
           <div class="col s12 m6 l6">
             <div class="card hoverable animate__animated animate__slideInLeft wow">
               <div class="card-image waves-effect waves-block waves-light">
-                <a href="japanexpo.html"><img class="activator" src="img/stage.JPG" alt="japan expo"></a>
+                <a href="japanexpo.html"><img class="activator" src=<?php echo $data["img_1"] ?> alt="japan expo"></a>
               </div>
               <div class="card-content">
-                <span class="card-title grey-text text-darken-4">Japan Expo</span>
+                <span class="card-title grey-text text-darken-4"><?php echo $data["h2_1"] ?></span>
               </div>
             </div>  
           </div>
@@ -66,7 +73,7 @@
             <div class="row">
               <div class="col s12 m8 l8 offset-l2 offset-m2">
                 <div class="card-panel animate__animated animate__zoomIn wow">
-                  <span>Anaëlle participated at the Japan Expo 2022 with Kaio Gaming. She organized two tournaments, one of them being on Super Smash Bros and the other on Demon Slayer. She also had the chance to go and animate a Demon Slayer king of the hill on the biggest stage of the event.
+                  <span><?php echo $data["p1"] ?>
                   </span>
                 </div>
               </div>
@@ -83,7 +90,7 @@
           <div class="row">
             <div class="col s12 m8 l8 offset-l2 offset-m2">
               <div class="card-panel animate__animated animate__zoomIn wow">
-                <span>Alongside Yohan Glad, the president of Kaio Gaming, Anaëlle has reworked the graphic charter of the association they are part of. It was a long process to create the global visual but what was even longer was to create merchandise with it.
+                <span><?php echo $data["p2"] ?>
                 </span>
               </div>
             </div>
@@ -92,10 +99,10 @@
         <div class="col s12 m6 l6">
           <div class="card hoverable animate__animated animate__slideInRight wow">
             <div class="card-image waves-effect waves-block waves-light">
-              <a href="charterkg.html"><img class="activator" src="img/charter.png" alt="charter"></a>
+              <a href="charterkg.html"><img class="activator" src=<?php echo $data["img_2"] ?> alt="charter"></a>
             </div>
             <div class="card-content">
-              <span class="card-title grey-text text-darken-4">Graphic Charter</span>
+              <span class="card-title grey-text text-darken-4"><?php echo $data["h2_2"] ?></span>
               </div>
           </div>
         </div>        
@@ -108,10 +115,10 @@
         <div class="col s12 m6 l6">
           <div class="card hoverable animate__animated animate__slideInLeft wow">
             <div class="card-image waves-effect waves-block waves-light">
-              <a href="ijso.html"><img class="activator" src="img/ijso.JPG" alt="ijso"></a>
+              <a href="ijso.html"><img class="activator" src=<?php echo $data["img_3"] ?> alt="ijso"></a>
             </div>
             <div class="card-content">
-              <span class="card-title grey-text text-darken-4">IJSO 2019</span>
+              <span class="card-title grey-text text-darken-4"><?php echo $data["h2_3"] ?></span>
             </div>
           </div>
         </div>        
@@ -119,7 +126,7 @@
           <div class="row">
             <div class="col s12 m8 l8 offset-l2 offset-m2">
               <div class="card-panel animate__animated animate__zoomIn wow">
-                <span>In 2019, Anaëlle had the chance to be selected to participate in an international science olympiad in order to represent France alongside 5 other students. The olympiad took place in Doha, Qatar and gathered altogether 6 students and 3 teachers from over 70 different countries.
+                <span><?php echo $data["p3"] ?>
                 </span>
               </div>
             </div>
