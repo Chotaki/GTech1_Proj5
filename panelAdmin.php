@@ -16,11 +16,11 @@ foreach($data as $userData){
     echo "user id: ".$userData['id']."| user name : ".$userData['username']."| is an admin ? ";
     echo $userData['admin'] == 1?'yes':'no';
     ?>
-    <form method="post" action="queries/adminToggle.php">
+    <form method="post" action="../queries/adminToggle.php">
         <input type='hidden' name='userId' value="<?php echo $userData['id'] ?>" />
         <button type='submit'>Toggle admin</button>
     </form>
-    <form method="post" action="queries/userDelete.php">
+    <form method="post" action="../queries/userDelete.php">
         <input type='hidden' name='userId' value="<?php echo $userData['id'] ?>" />
         <button type='submit'>Delete user</button>
     </form>
