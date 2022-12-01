@@ -1,3 +1,4 @@
+<a href='index.php'>pls let me leave</a>
 <?php
 require "config/config.php";
 //require_once("queries/adminCheck.php");
@@ -38,29 +39,20 @@ foreach($data as $userData){
   $data = $pre->fetch(PDO::FETCH_ASSOC);
 ?>
 <form method="post" action="queries/homeEdit.php">
-    <input name="h1" value=<?php echo $data['h1']?>>h1</input><br/>
-    <input name="h2_1" value=<?php echo $data['h2_1']?>>first article card</input>
+    <textarea name="h1" ><?php echo $data['h1']?></textarea><br/>
+    <textarea name="h2_1" ><?php echo $data['h2_1']?></textarea><br/>
     <textarea name="p1" ><?php echo $data['p1']?></textarea><br/>
-    <input name="h2_2" value=<?php echo $data['h2_2']?>>second article card</input>
+    <textarea name="h2_2" ><?php echo $data['h2_2']?></textarea><br/>
     <textarea name="p2" ><?php echo $data['p2']?></textarea><br/>
-    <input name="h2_3" value=<?php echo $data['h2_3']?>>third article card</input>
+    <textarea name="h2_3" ><?php echo $data['h2_3']?></textarea><br/>
     <textarea name="p3" ><?php echo $data['p3']?></textarea><br/>
-    <input type="submit" value="ok this is cooler now">
+    <input type="submit" value="ok good">
 </form>
 
-<?php 
 
-$sql = "SELECT * FROM projects"; //votre requêtes SQL (vous savez faire maintenant héhé !)
-$pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
-$pre->execute();//on l'execute
-$data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
-
-?>
 
 <h2>Projects</h2>
 <h3>change the main title</h3>
-<input type="text" name="h1" value="<?php echo $data['h1'] ?>">
-<input type="submit" value="Modify the title">
 <h2>make the goddamn article yourself if you're so good at it</h2>
 
 <h2>check out those sick articles</h2>
