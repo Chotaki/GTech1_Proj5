@@ -49,8 +49,6 @@ foreach($data as $userData){
     <input type="submit" value="ok good">
 </form>
 
-
-
 <h2>Modify your projects</h2>
 <?php foreach($data as $project){ ?>
     <form action="update_project.php" method="post">
