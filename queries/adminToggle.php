@@ -17,7 +17,6 @@ if ($data['admin'] == 0){
     );
     $pre = $pdo->prepare($sql);
     $pre->execute($dataBinded);
-    echo("finitruc1");
 }else{
     $sql = "UPDATE user SET admin = 0 WHERE id = :userId";
     $dataBinded=array(
@@ -25,7 +24,6 @@ if ($data['admin'] == 0){
     );
     $pre = $pdo->prepare($sql);
     $pre->execute($dataBinded);
-    echo("finitruc2");
 };
-header('Location:../panelAdmin.php');
+header('Location: ../admin/panelAdmin.php');
 ?>
