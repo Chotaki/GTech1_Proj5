@@ -1,5 +1,5 @@
 <?php
-require("../config/config.php");
+require "config/config.php";
 //require_once("queries/adminCheck.php");
 ?><h1>Administrator Panel</h1><?php
 $sql= "SELECT * from user";
@@ -26,7 +26,6 @@ foreach($data as $userData){
     </form>
     
     <?php
-    //killthatguy aka thanossnap.php
 };
 ?>
 <h2>change the main page</h2>

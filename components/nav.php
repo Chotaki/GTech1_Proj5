@@ -52,7 +52,7 @@
             </div>
         </ul>
     </div>
-    <a href='/proj1php/admin/panelAdmin.php'>Panel Admin</a>
+    <a href="panelAdmin.php">Panel Admin</a>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
