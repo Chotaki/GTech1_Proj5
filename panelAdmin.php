@@ -20,6 +20,11 @@ foreach($data as $userData){
         <input type='hidden' name='userId' value="<?php echo $userData['id'] ?>" />
         <button type='submit'>Toggle admin</button>
     </form>
+    <form method="post" action="queries/userDelete.php">
+        <input type='hidden' name='userId' value="<?php echo $userData['id'] ?>" />
+        <button type='submit'>Delete user</button>
+    </form>
+    
     <?php
     //killthatguy aka thanossnap.php
 };
