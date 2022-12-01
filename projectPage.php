@@ -28,7 +28,7 @@
 
     <!-- Browser Tab -->
     <link rel="icon" href="img/puzzle.png">
-    <title>Japan Expo</title>
+    <title><?php echo $data["h1"]?></title>
   </head>
 
   <body>
@@ -38,15 +38,15 @@
   
   <div class="death">
     <!-- Header -->
-    <header id="headerproj"><h1 class="center-align white-text margin animate__animated animate__fadeIn">Japan Expo</h1></header>
+    <header id="headerproj"><h1 class="center-align white-text margin animate__animated animate__fadeIn"><?php echo $data["h1"]?></h1></header>
 
     <!-- Content -->
     <div id="topcard" class="row container wow animate__animated animate__slideInLeft">
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Going to Paris</span>
-            <p>As an association evolving in the gaming and eSport industry in France and Luxembourg, the Japan Expo is a must to gain visibility. With the covid, the Japan Expo didn’t happen for two years so in 2022 we knew it was going to be a crazy event. We planned everything in two months and in july we were able to attend the event.</p>
+            <span class="card-title"><?php echo $data["span1"]?></span>
+            <p><?php echo $data["p1"]?></p>
           </div>
         </div>
       </div>
@@ -56,8 +56,8 @@
       <div class="col s12 m6 l6 offset-m6 offset-l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Organizing tournaments</span>
-            <p>Anaëlle had the chance to be at the head of a team for two tournaments during the event. She had to organize the inscriptions as well as the competition itself. In the morning she was listing all the contestants while in the afternoon she was taking care of the players and the games happening with Alexis’ help while contesting as well.</p>
+            <span class="card-title"><?php echo $data["span2"]?></span>
+            <p><?php echo $data["p2"]?></p>
           </div>
         </div>
       </div>
@@ -67,8 +67,8 @@
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Animating on stage</span>
-            <p>Anaëlle was lucky enough to comment on a few tournaments on the biggest stage of the event. The games were Demon Slayer and Naruto and she was alongside Yohan that co-animated, it was a fun and rewarding experience.</p>
+            <span class="card-title"><?php echo $data["span3"]?></span>
+            <p><?php echo $data["p3"]?></p>
           </div>
         </div>
       </div>
@@ -78,8 +78,8 @@
       <div class="col s12 m6 l6 offset-m6 offset-l6">
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Animating a stand</span>
-            <p>This is the main occupation of the association so it wasn’t the first time that Anaëlle animated a stand. The only difference was the amount of people she saw and talked to. It was a bit more stressful because all the people passing by were potential thieves.</p>
+            <span class="card-title"><?php echo $data["span4"]?></span>
+            <p><?php echo $data["p4"]?></p>
           </div>
         </div>
       </div>
@@ -89,19 +89,19 @@
     <div class="row">
       <div class="col s12 m12 l6 offset-l3 carousel carousel-slider center margin">
         <div class="carousel-fixed-item center">
-          <a class="btn waves-effect white grey-text darken-text-2" href="https://www.japan-expo-paris.com/fr/" target="_blank" rel="nofollow">Japan Expo</a>
+          <a class="btn waves-effect white grey-text darken-text-2" href="<?php echo $data["a_link"]?>" target="_blank" rel="nofollow"><?php echo $data["a_title"]?></a>
         </div>
-        <div class="carousel-item white-text" style="background-image:url('<?php echo ?>')">
-          <h2 class="carousel-text">Installation</h2>
+        <div class="carousel-item white-text" style="background-image:url('<?php echo $data["img1"]?>')">
+          <h2 class="carousel-text"><?php echo $data["h2_1"]?></h2>
         </div>
-        <div class="carousel-item white-text" style="background-image:url('<?php echo ?>')">
-          <h2 class="carousel-text">Our Stand</h2>
+        <div class="carousel-item white-text" style="background-image:url('<?php echo $data["img2"]?>')">
+          <h2 class="carousel-text"><?php echo $data["h2_2"]?></h2>
         </div>
-        <div class="carousel-item white-text" style="background-image:url('<?php echo ?>')">
-          <h2 class="carousel-text">The Team</h2>
+        <div class="carousel-item white-text" style="background-image:url('<?php echo $data["img3"]?>')">
+          <h2 class="carousel-text"><?php echo $data["h2_3"]?></h2>
         </div>
-        <div class="carousel-item white-text" style="background-image:url('<?php echo ?>')">
-          <h2 class="carousel-text">Toornament</h2>
+        <div class="carousel-item white-text" style="background-image:url('<?php echo $data["img4"]?>')">
+          <h2 class="carousel-text"><?php echo $data["h2_4"]?></h2>
         </div>
       </div>
     </div>  

@@ -1,5 +1,5 @@
 <?php
-require_once("config/config.php");
+require_once("../config/config.php");
 
 if (!isset($_SESSION['user']) || $_SESSION['user']["admin"]==0){
     if(is_file("index.php")){

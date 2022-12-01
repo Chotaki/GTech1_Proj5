@@ -52,7 +52,9 @@
             </div>
         </ul>
     </div>
-    <a href="panelAdmin.php">Panel Admin</a>
+    <?php if(isset($_SESSION['user']) && $_SESSION['user']['admin']==1){ ?>
+        <a href="panelAdmin.php">Panel Admin</a>
+    <?php } ?> 
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
