@@ -1,17 +1,41 @@
 <?php
 require_once "../config/config.php";
 
-if(!empty($_FILES['imgp1']['name'])){
-    $destination = "img/".$_FILES['img_1']['name'];
-    move_uploaded_file($_FILES['img_1']['tmp_name'],$destination);
-    $databinded = array(
-        ':img_1' => $destination
-    );
-    $sql = "UPDATE home SET img_1=:img_1";
-    $pre = $pdo->prepare($sql);
-    $pre->execute($databinded);
-};
+echo ($_POST['imgradio']);
+$destination = 'img/'.$_FILES['image']['name']; //dossier "img"
+move_uploaded_file($_FILES['image']['tmp_name'],$destination);
 
+
+
+
+
+/*
+if ($_POST['imgradio']=='1mg'){
+    $sql = "UPDATE home SET img_1 = :imglocation WHERE 1";
+    $dataBinded=array(
+        ':imglocation'   => $destination
+    );
+    $pre = $pdo->prepare($sql);
+    $pre->execute($dataBinded);
+
+}else if($_POST['imgradio']=='2mg'){
+    $sql = "UPDATE home SET img_2 = :imglocation WHERE 1";
+    $dataBinded=array(
+        ':imglocation'   => $destination
+    );
+    $pre = $pdo->prepare($sql);
+    $pre->execute($dataBinded);
+
+}else if($_POST['imgradio']=='3mg'){
+    $sql = "UPDATE home SET img_3 = :imglocation WHERE 1";
+    $dataBinded=array(
+        ':imglocation'   => $destination
+    );
+    $pre = $pdo->prepare($sql);
+    $pre->execute($dataBinded);
+
+};
+*/
 
 //header('Location: ../panelAdmin.php');
 ?>
