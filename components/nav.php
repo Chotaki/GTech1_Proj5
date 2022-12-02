@@ -35,10 +35,8 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="hide-on-med-and-down">
             <div>
-                <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
-                <li><a href="japanexpo.php">Japan Expo</a></li>
-                <li><a href="charterkg.php">Graphic Charter</a></li>
-                <li><a href="ijso.php">IJSO 2019</a></li>
+                <li><a href="index.php"><i class="material-icons">home</i></a></li>
+                <li><a href="projectPage.php?id=2">Project</a></li>
             </div>
             <div class="right">
                 <?php if (isset($_SESSION['user'])){ ?>
@@ -59,9 +57,9 @@
 
 <ul class="sidenav" id="mobile-demo">
     <li><a onClick="refreshPage()"><i class="material-icons">home</i></a></li>
-    <li><a href="japanexpo.php">Japan Expo</a></li>
-    <li><a href="charterkg.php">Graphic Charter</a></li>
-    <li><a href="ijso.php">IJSO 2019</a></li>
+    <li><a href="projectPage.php?id=<?php echo $projets['id'] ?>">Japan Expo</a></li>
+    <li><a href="projectPage.php?id=<?php echo $projets['id'] ?>">Graphic Charter</a></li>
+    <li><a href="projectPage.php?id=<?php echo $projets['id'] ?>">IJSO 2019</a></li>
     <li><a href="#modal3">Sign Up</a></li>
     <li><a href="#modal2">Login</i></a></li>
     <form action="queries/logout.php">

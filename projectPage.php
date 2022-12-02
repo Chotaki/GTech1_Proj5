@@ -33,6 +33,17 @@
 
   <body>
 
+  <?php 
+    $sql = "SELECT * FROM projects WHERE id=:id";
+    $dataBinded=array(
+        ':id' => $_GET['id']
+
+    );
+    $pre = $pdo->prepare($sql); 
+    $pre->execute($dataBinded);
+    $data = $pre->fetch(PDO::FETCH_ASSOC);
+    ?>
+
   <!-- NavBar -->
   <?php require_once "components/nav.php" ?>
   
@@ -105,6 +116,19 @@
         </div>
       </div>
     </div>  
+
+    <ul class="pagination center wow animateanimated animatebackInUp">
+        <?php 
+            $sql = "SELECT * FROM projects"; //votre requêtes SQL (vous savez faire maintenant héhé !)
+            $pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
+            $pre->execute();//on l'execute
+            $data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
+            $i = 1;
+            foreach ($data as $projets){ ?>
+                <li class="waves-effect"><a class="green-text text-lighten-2" href="projectPage.php?id=<?php echo $projets['id'] ?>"><?php echo $i ?></a></li>
+                <?php $i++ ?>
+        <?php } ?>
+    </ul> 
 
     <!-- Footer -->
     <?php require_once "components/footer.php" ?>

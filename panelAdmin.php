@@ -39,51 +39,32 @@ foreach($data as $userData){
 };
 ?>
 
-<h2>change the main page</h2>
-<h3>text and stuff</h3>
+<h2>Modify the main page</h2>
 <?php
   $sql = "SELECT * FROM home";
   $pre = $pdo->prepare($sql);
   $pre->execute();
   $homedata = $pre->fetch(PDO::FETCH_ASSOC);
 ?>
-<form method="post" action="queries/homeEdit.php">
-    <textarea name="h1" ><?php echo $homedata['h1']?></textarea><br/>
-    <textarea name="h2_1" ><?php echo $homedata['h2_1']?></textarea><br/>
+<form method="post" action="queries/homeEdit.php" enctype="multipart/form-data">
+    <h3>Title</h3>
+    <input name="h1" value="<?php echo $homedata['h1']?>"/><br/>
+    <h3>Project Card 1</h3>
+    <input name="h2_1"value="<?php echo $homedata['h2_1']?>"/><br/>
     <textarea name="p1" ><?php echo $homedata['p1']?></textarea><br/>
-    <textarea name="h2_2" ><?php echo $homedata['h2_2']?></textarea><br/>
+    <h3>Project Card 2</h3>
+    <input name="h2_2" value="<?php echo $homedata['h2_2']?>"/><br/>
     <textarea name="p2" ><?php echo $homedata['p2']?></textarea><br/>
-    <textarea name="h2_3" ><?php echo $homedata['h2_3']?></textarea><br/>
+    <h3>Project Card 3</h3>
+    <input name="h2_3" value="<?php echo $homedata['h2_3']?>"/><br/>
     <textarea name="p3" ><?php echo $homedata['p3']?></textarea><br/> 
-    <input type="submit" value="ok good">
+    <h4>Images</h4>
+    <input type="file" name="img_1"/><br>
+    <input type="file" name="img_2"/><br>
+    <input type="file" name="img_3"/><br>
+    <input type="submit" value="Modify">
 </form>
 
-<!--
-<h3>images</h3>
-<form method="post" action="queries/homeUpload.php" enctype="multipart/form-data">
-    <img width=500px src=<?//php echo $homedata["img_1"] ?> alt="première image sur la page d'acceuil">
-    <img width=500px src=<?//php echo $homedata["img_2"] ?> alt="deuxième image sur la page d'acceuil">
-    <img width=500px src=<?//php echo $homedata["img_3"] ?> alt="troisième image sur la page d'acceuil"></br>
-    <input type="radio" id="radio1" name="imgradio" value="1mg">
-    <label for="radio1">image 1</label><br>
-    <input type="radio" id="radio2" name="imgradio" value="2mg">
-    <label for="radio2">image 2</label><br>
-    <input type="radio" id="radio3" name="imgradio" value="3mg">
-    <label for="radio3">image 3</label>
-    <input type='file' name='image'>
-    <input type="submit" value="upload picture"/>
-</form>
-
-<form method="post" action="queries/homeUpload.php" enctype="multipart/form-data">
-    <img width=500px src=<?php //echo $homedata["img_1"] ?> alt="première image sur la page d'acceuil">
-    <input type='file' name='homeimg1'><br/>
-    <img width=500px src=<?php //echo $homedata["img_2"] ?> alt="deuxième image sur la page d'acceuil">
-    <input type='file' name='homeimg2'><br/>
-    <img width=500px src=<?php //echo $homedata["img_3"] ?> alt="troisième image sur la page d'acceuil">
-    <input type='file' name='homeimg3'><br/>
-    <input type="submit" value="upload pictures"/>
-</form>
--->
 <?php
   $sql = "SELECT * FROM projects";
   $pre = $pdo->prepare($sql);
@@ -94,7 +75,7 @@ foreach($data as $userData){
 
 <h2>Modify your projects</h2>
 <?php foreach($data as $project){ ?>
-    <form action="update_project.php" method="post">
+    <form action="queries/update_project.php" method="post" enctype="multipart/form-data">
         <h3>Main title</h3>
         <input type='hidden' name='projectId' value="<?php echo $project['id'] ?>" />
         <input type="text" name="h1" value="<?php echo $project['h1'] ?>"/>
@@ -127,16 +108,13 @@ foreach($data as $userData){
         <input type="text" name="a_title" value="<?php echo $project['a_title'] ?>"/><br>
         <input type="text" name="a_link" value="<?php echo $project['a_link'] ?>"/><br>
 
-        <input type="submit" value="Modify all the texts and link"/>
-    </form>
-
-    <form method="post" action="upload_files.php" enctype="multipart/form-data">
         <h4>Images</h4>
         <input type="file" name="img1"/><br>
         <input type="file" name="img2"/><br>
         <input type="file" name="img3"/><br>
         <input type="file" name="img4"/><br>
-        <input type="submit" value="Modify the images"/>
+
+        <input type="submit" value="Modify"/>
     </form>
 
 <?php } ?>
@@ -187,5 +165,5 @@ foreach($data as $userData){
         <input type="file" name="img3"/><br>
         <input type="file" name="img4"/><br>
 
-        <input type="submit" value="Modify all"/>
+        <input type="submit" value="Create"/>
     </form>

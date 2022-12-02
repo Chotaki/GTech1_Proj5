@@ -2,6 +2,22 @@
 
 require_once '../config/config.php';
 
+//sauvegarder le fichier dans un dossier spécifique
+$destination_img1 = "img/".$_FILES['img1']['name']; //dossier "img"
+move_uploaded_file($_FILES['img1']['tmp_name'],"../".$destination_img1);
+
+//sauvegarder le fichier dans un dossier spécifique
+$destination_img2 = "img/".$_FILES['img2']['name']; //dossier "img"
+move_uploaded_file($_FILES['img2']['tmp_name'],"../".$destination_img2);
+
+//sauvegarder le fichier dans un dossier spécifique
+$destination_img3 = "img/".$_FILES['img3']['name']; //dossier "img"
+move_uploaded_file($_FILES['img3']['tmp_name'],"../".$destination_img3);
+
+//sauvegarder le fichier dans un dossier spécifique
+$destination_img4 = "img/".$_FILES['img4']['name']; //dossier "img"
+move_uploaded_file($_FILES['img4']['tmp_name'],"../".$destination_img4);
+
 $sql = "INSERT INTO projects(h1,span1,p1,span2,p2,span3,p3,span4,p4,img1,img2,img3,img4,h2_1,h2_2,h2_3,h2_4,a_title,a_link) VALUES(:h1,:span1,:p1,:span2,:p2,:span3,:p3,:span4,:p4,:img1,:img2,:img3,:img4,:h2_1,:h2_2,:h2_3,:h2_4,:a_title,:a_link)";
 $dataBinded=array(
     ':h1'   => $_POST['h1'],
@@ -28,20 +44,6 @@ $dataBinded=array(
 $pre = $pdo->prepare($sql);
 $pre->execute($dataBinded);
 
-//sauvegarder le fichier dans un dossier spécifique
-$destination_img1 = "img/".$_FILES['img1']['name']; //dossier "img"
-move_uploaded_file($_FILES['img1']['tmp_name'],$destination_img1);
-
-//sauvegarder le fichier dans un dossier spécifique
-$destination_img2 = "img/".$_FILES['img2']['name']; //dossier "img"
-move_uploaded_file($_FILES['img2']['tmp_name'],$destination_img2);
-
-//sauvegarder le fichier dans un dossier spécifique
-$destination_img3 = "img/".$_FILES['img3']['name']; //dossier "img"
-move_uploaded_file($_FILES['img3']['tmp_name'],$destination_img3);
-
-//sauvegarder le fichier dans un dossier spécifique
-$destination_img4 = "img/".$_FILES['img4']['name']; //dossier "img"
-move_uploaded_file($_FILES['img4']['tmp_name'],$destination_img4);
-
+header('Location: ../panelAdmin.php');
+exit();
 ?>
