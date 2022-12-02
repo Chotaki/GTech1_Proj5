@@ -54,21 +54,36 @@ foreach($data as $userData){
     <textarea name="h2_2" ><?php echo $homedata['h2_2']?></textarea><br/>
     <textarea name="p2" ><?php echo $homedata['p2']?></textarea><br/>
     <textarea name="h2_3" ><?php echo $homedata['h2_3']?></textarea><br/>
-    <textarea name="p3" ><?php echo $homedata['p3']?></textarea><br/>
+    <textarea name="p3" ><?php echo $homedata['p3']?></textarea><br/> 
     <input type="submit" value="ok good">
 </form>
 
+<!--
 <h3>images</h3>
 <form method="post" action="queries/homeUpload.php" enctype="multipart/form-data">
-    <img width=500px src=<?php echo $homedata["img_1"] ?> alt="première image sur la page d'acceuil">
+    <img width=500px src=<?//php echo $homedata["img_1"] ?> alt="première image sur la page d'acceuil">
+    <img width=500px src=<?//php echo $homedata["img_2"] ?> alt="deuxième image sur la page d'acceuil">
+    <img width=500px src=<?//php echo $homedata["img_3"] ?> alt="troisième image sur la page d'acceuil"></br>
+    <input type="radio" id="radio1" name="imgradio" value="1mg">
+    <label for="radio1">image 1</label><br>
+    <input type="radio" id="radio2" name="imgradio" value="2mg">
+    <label for="radio2">image 2</label><br>
+    <input type="radio" id="radio3" name="imgradio" value="3mg">
+    <label for="radio3">image 3</label>
+    <input type='file' name='image'>
+    <input type="submit" value="upload picture"/>
+</form>
+
+<form method="post" action="queries/homeUpload.php" enctype="multipart/form-data">
+    <img width=500px src=<?php //echo $homedata["img_1"] ?> alt="première image sur la page d'acceuil">
     <input type='file' name='homeimg1'><br/>
-    <img width=500px src=<?php echo $homedata["img_2"] ?> alt="deuxième image sur la page d'acceuil">
+    <img width=500px src=<?php //echo $homedata["img_2"] ?> alt="deuxième image sur la page d'acceuil">
     <input type='file' name='homeimg2'><br/>
-    <img width=500px src=<?php echo $homedata["img_3"] ?> alt="troisième image sur la page d'acceuil">
+    <img width=500px src=<?php //echo $homedata["img_3"] ?> alt="troisième image sur la page d'acceuil">
     <input type='file' name='homeimg3'><br/>
     <input type="submit" value="upload pictures"/>
 </form>
-
+-->
 <?php
   $sql = "SELECT * FROM projects";
   $pre = $pdo->prepare($sql);
