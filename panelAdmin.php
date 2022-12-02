@@ -1,6 +1,15 @@
+<?php
+    require_once "config/config.php";
+    $page = "panel-admin";
+    if(isset($_SESSION['user']) && $_SESSION['user']['admin']==1){
+
+    }else{
+        header('Location: index.php');
+        exit();
+    } ?>
+
 <a href='index.php'>pls let me leave</a>
 <?php
-require "config/config.php";
 //require_once("queries/adminCheck.php");
 ?><h1>Administrator Panel</h1><?php
 $sql= "SELECT * from user";
@@ -116,3 +125,52 @@ foreach($data as $userData){
     </form>
 
 <?php } ?>
+
+<?php
+  $sql = "SELECT * FROM projects";
+  $pre = $pdo->prepare($sql);
+  $pre->execute();
+  $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<h2>Create your project</h2>
+<form action="queries/add_project.php" method="post" enctype="multipart/form-data">
+        <h3>Main title</h3>
+        <input type="text" name="h1"/>
+
+        <h3>First card</h3>
+        <input type="text" name="span1"/> <br>
+        <textarea type="text" name="p1"></textarea>
+
+        <h3>Second Card</h3>
+        <input type="text" name="span2"/><br>
+        <textarea type="text" name="p2"></textarea>
+
+        <h3>Third Card</h3>
+        <input type="text" name="span3"/><br>
+        <textarea type="text" name="p3"></textarea>
+        
+        <h3>Fourth Card</h3>
+        <input type="text" name="span4"/><br>
+        <textarea type="text" name="p4"></textarea>
+
+        <h3>Carousel</h3>
+
+        <h4>Images Title</h4>
+        <input type="text" name="h2_1"/><br>
+        <input type="text" name="h2_2"/><br>
+        <input type="text" name="h2_3"/><br>
+        <input type="text" name="h2_4"/>
+
+        <h4>Button</h4>
+        <input type="text" name="a_title"/><br>
+        <input type="text" name="a_link"/><br>
+
+        <h4>Images</h4>
+        <input type="file" name="img1"/><br>
+        <input type="file" name="img2"/><br>
+        <input type="file" name="img3"/><br>
+        <input type="file" name="img4"/><br>
+
+        <input type="submit" value="Modify all"/>
+    </form>
